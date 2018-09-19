@@ -1,0 +1,39 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+group 'blue.sparse.minecraft'
+version '1.0-SNAPSHOT'
+
+repositories {
+	mavenCentral()
+	mavenLocal()
+	maven { url 'http://sparse.blue/maven' }
+	maven { url 'http://dl.bintray.com/kotlin/kotlin-eap' }
+	flatDir { dirs "F:/Spigot/" }
+}
+
+dependencies {
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+//	compileOnly name: "aspigot-1.13.1"
+	["1.7.10", "1.8.3", "1.8.8", "1.8", "1.9.2", "1.9.4", "1.10.2", "1.11.2", "1.11", "1.12.1", "1.12.2", "1.12", "1.13", "1.13.1"].each {
+		compileOnly name: "spigot-$it"
+	}
+
+	compile project(":api")
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+jar {
+	archivesBaseName = "KMC-Bukkit"
+//	archiveName = "${archivesBaseName}.jar"
+//	from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+	from project(":api").sourceSets.main.output
+}

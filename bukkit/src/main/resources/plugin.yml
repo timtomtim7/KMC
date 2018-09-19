@@ -1,0 +1,5 @@
+name: KMC-Bukkit
+version: 1.0
+main: blue.sparse.kmc.bukkit.KMCBukkitPlugin
+author: Tom
+api-version: 1.13
