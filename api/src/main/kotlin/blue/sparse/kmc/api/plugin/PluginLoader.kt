@@ -53,8 +53,6 @@ object PluginLoader {
 
 			loadedPlugins[file] = plugin
 
-			LinkedHashSet<Int>().last()
-
 			return plugin
 		}catch (t: Throwable) {
 			KMC.logger.warning("Failed to load plugin: ${file.name}")
@@ -62,6 +60,18 @@ object PluginLoader {
 		}
 
 		return null
+	}
+
+	fun disablePlugins() {
+		//TODO: events, etc.
+		loadedPlugins.values.toList().forEach(this::disablePlugin)
+		loadedPlugins.clear()
+	}
+
+	fun disablePlugin(plugin: Plugin) {
+		plugin.onDisable()
+		val classLoader = plugin.javaClass.classLoader as PluginClassLoader
+		classLoader.onDisable()
 	}
 
 }

@@ -1,68 +1,77 @@
-[05:45:23] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[05:45:23] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[05:45:23] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[05:45:23] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[05:45:23] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[05:45:23] [main/INFO]: Loaded 0 recipes
-[05:45:23] [Server thread/INFO]: Starting minecraft server version 1.13.1
-[05:45:23] [Server thread/INFO]: Loading properties
-[05:45:23] [Server thread/INFO]: Default game type: SURVIVAL
-[05:45:23] [Server thread/INFO]: This server is running Paper version git-Paper-221 (MC: 1.13.1) (Implementing API version 1.13.1-R0.1-SNAPSHOT)
-[05:45:23] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[05:45:23] [Server thread/INFO]: Using 4 threads for Netty based IO
-[05:45:23] [Server thread/INFO]: Debug logging is disabled
-[05:45:24] [Server thread/INFO]: Generating keypair
-[05:45:24] [Server thread/INFO]: Starting Minecraft server on *:25565
-[05:45:28] [Server thread/INFO]: Set PluginClassLoader as parallel capable
-[05:45:28] [Server thread/INFO]: [KMC-Bukkit] Loading KMC-Bukkit v1.0
-[05:45:28] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[05:45:28] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
-[05:45:28] [Server thread/INFO]: Preparing level "world"
-[05:45:28] [Server thread/ERROR]: Could not set generator for default world 'world': Plugin 'Generation' does not exist
-[05:45:28] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
-[05:45:32] [Server thread/INFO]: Loaded 524 recipes
-[05:45:37] [Server thread/INFO]: Preparing start region for level minecraft:the_end (Seed: 2468582947344764123)
-[05:45:37] [Server thread/INFO]: Preparing spawn area: 11%
-[05:45:37] [Server thread/INFO]: Preparing spawn area: 22%
-[05:45:37] [Server thread/INFO]: Preparing spawn area: 33%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 44%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 55%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 66%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 77%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 88%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 100%
-[05:45:38] [Server thread/INFO]: Preparing start region for level minecraft:the_nether (Seed: 2468582947344764123)
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 11%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 22%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 33%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 44%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 55%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 66%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 77%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 88%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 100%
-[05:45:38] [Server thread/INFO]: Preparing start region for level minecraft:overworld (Seed: 2468582947344764123)
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 11%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 22%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 33%
-[05:45:38] [Server thread/INFO]: Preparing spawn area: 44%
-[05:45:39] [Server thread/INFO]: Preparing spawn area: 55%
-[05:45:39] [Server thread/INFO]: Preparing spawn area: 66%
-[05:45:39] [Server thread/INFO]: Preparing spawn area: 77%
-[05:45:39] [Server thread/INFO]: Preparing spawn area: 88%
-[05:45:39] [Server thread/INFO]: Preparing spawn area: 100%
-[05:45:39] [Server thread/INFO]: Time elapsed: 2048 ms
-[05:45:39] [Server thread/INFO]: [KMC-Bukkit] Enabling KMC-Bukkit v1.0
-[05:45:41] [Server thread/INFO]: [KMC] KMC initialized!
-[05:45:43] [Server thread/INFO]: [KMCTest] Loading KMCTest
-[05:45:43] [Server thread/INFO]: Done (14.494s)! For help, type "help"
-[05:45:43] [Server thread/INFO]: Using epoll channel type
-[05:45:43] [Server thread/INFO]: Timings Reset
-[08:13:18] [Server thread/INFO]: Stopping the server
-[08:13:18] [Server thread/INFO]: Stopping server
-[08:13:18] [Server thread/INFO]: [KMC-Bukkit] Disabling KMC-Bukkit v1.0
-[08:13:18] [Server thread/INFO]: Saving players
-[08:13:18] [Server thread/INFO]: Saving worlds
-[08:13:18] [Server thread/INFO]: Saving chunks for level 'world_the_end'/minecraft:the_end
-[08:13:18] [Server thread/INFO]: Saving chunks for level 'world_nether'/minecraft:the_nether
-[08:13:18] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[06:00:48] [main/INFO]: Loaded 0 recipes
+[06:00:48] [Server thread/INFO]: Starting minecraft server version 1.13.2
+[06:00:48] [Server thread/INFO]: Loading properties
+[06:00:48] [Server thread/INFO]: Default game type: SURVIVAL
+[06:00:50] [Server thread/INFO]: This server is running Paper version git-Paper-473 (MC: 1.13.2) (Implementing API version 1.13.2-R0.1-SNAPSHOT)
+[06:00:50] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[06:00:50] [Server thread/INFO]: Using 4 threads for Netty based IO
+[06:00:50] [Server thread/INFO]: Debug logging is disabled
+[06:00:51] [Server thread/INFO]: Generating keypair
+[06:00:51] [Server thread/INFO]: Starting Minecraft server on *:25565
+[06:00:56] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[06:00:56] [Server thread/INFO]: [KMC-Bukkit] Loading KMC-Bukkit v0.0
+[06:00:56] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[06:00:56] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[06:00:56] [Server thread/INFO]: Preparing level "world"
+[06:00:56] [Server thread/ERROR]: Could not set generator for default world 'world': Plugin 'Generation' does not exist
+[06:00:56] [Server thread/INFO]: Reloading ResourceManager: Default, bukkit
+[06:01:00] [Server thread/INFO]: Loaded 524 recipes
+[06:01:05] [Server thread/INFO]: Preparing start region for level minecraft:overworld (Seed: 2468582947344764123)
+[06:01:05] [Server thread/INFO]: Preparing start region for level minecraft:the_nether (Seed: 2468582947344764123)
+[06:01:05] [Server thread/INFO]: Preparing start region for level minecraft:the_end (Seed: 2468582947344764123)
+[06:01:05] [Server thread/INFO]: Time elapsed: 49 ms
+[06:01:05] [Server thread/INFO]: [KMC-Bukkit] Enabling KMC-Bukkit v0.0
+[06:01:05] [Server thread/INFO]: [KMC-Bukkit] KMC Bukkit Initialized for v1_13_R2
+[06:01:05] [Server thread/INFO]: [KMC] KMC initialized!
+[06:01:05] [Server thread/INFO]: Scanning "blue.sparse.test.KMCTestPlugin"
+[06:01:06] [Server thread/INFO]: File exists
+[06:01:06] [Server thread/INFO]: {test={0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}}
+[06:01:06] [Server thread/INFO]: Field set
+[06:01:06] [Server thread/INFO]: Found class with persistent
+[06:01:06] [Server thread/INFO]: [KMCTest] Loading KMCTest
+[06:01:06] [Server thread/INFO]: [KMCTest] Test plugin is enabled!
+[06:01:06] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:06] [Server thread/INFO]: ItemStack(item=Item(type=blue.sparse.kmc.api.type.item.Items$Helmet@3c6440ad, variation=blue.sparse.kmc.api.type.variations.ArmorVariation$Diamond@191ef948), amount=1) converted to BRICK
+[06:01:06] [Server thread/INFO]: Done (9.941s)! For help, type "help"
+[06:01:06] [Server thread/INFO]: Using epoll channel type
+[06:01:07] [Server thread/INFO]: Timings Reset
+[06:01:07] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:08] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:09] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:10] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:11] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:12] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:13] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:14] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:15] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:16] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:17] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:18] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:19] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e}
+[06:01:20] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f}
+[06:01:21] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10}
+[06:01:22] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11}
+[06:01:23] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12}
+[06:01:24] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13}
+[06:01:25] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14}
+[06:01:26] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15}
+[06:01:27] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15, 21=16}
+[06:01:28] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15, 21=16, 22=17}
+[06:01:29] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15, 21=16, 22=17, 23=18}
+[06:01:30] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15, 21=16, 22=17, 23=18, 24=19}
+[06:01:31] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15, 21=16, 22=17, 23=18, 24=19, 25=1a}
+[06:01:32] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15, 21=16, 22=17, 23=18, 24=19, 25=1a, 26=1b}
+[06:01:33] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15, 21=16, 22=17, 23=18, 24=19, 25=1a, 26=1b, 27=1c}
+[06:01:34] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15, 21=16, 22=17, 23=18, 24=19, 25=1a, 26=1b, 27=1c, 28=1d}
+[06:01:35] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15, 21=16, 22=17, 23=18, 24=19, 25=1a, 26=1b, 27=1c, 28=1d, 29=1e}
+[06:01:36] [Thread-16/INFO]: {0=1, 1=2, 2=3, 3=4, 4=5, 5=6, 6=7, 7=8, 8=9, 9=a, 10=b, 11=c, 12=d, 13=e, 14=f, 15=10, 16=11, 17=12, 18=13, 19=14, 20=15, 21=16, 22=17, 23=18, 24=19, 25=1a, 26=1b, 27=1c, 28=1d, 29=1e, 30=1f}
+[06:01:37] [Server thread/INFO]: Stopping the server
+[06:01:37] [Server thread/INFO]: Stopping server
+[06:01:37] [Server thread/INFO]: [KMC-Bukkit] Disabling KMC-Bukkit v0.0
+[06:01:37] [Server thread/INFO]: [KMC] KMC shutting down...
+[06:01:37] [Server thread/INFO]: [KMCTest] Test plugin is disabled!
+[06:01:37] [Server thread/INFO]: Saving players
+[06:01:38] [Server thread/INFO]: Saving worlds
+[06:01:38] [Server thread/INFO]: Saving chunks for level 'world'/minecraft:overworld
+[06:01:38] [Server thread/INFO]: Saving chunks for level 'world_nether'/minecraft:the_nether
+[06:01:38] [Server thread/INFO]: Saving chunks for level 'world_the_end'/minecraft:the_end

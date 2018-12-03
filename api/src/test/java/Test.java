@@ -7,7 +7,7 @@ public class Test {
 	public static void main(String[] args) {
 		
 		Item<?, ?> item = new Item<>(Items.Apple.INSTANCE, NoItemVariation.INSTANCE);
-		ItemDisplay display = new ItemDisplay(item);
+//		ItemDisplay display = new ItemDisplay(item);
 //		display.
 	}
 }

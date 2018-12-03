@@ -20,6 +20,10 @@ interface ItemType<V: ItemVariation>: Type<V> {
 		constructor(id: String): this(Identifier.fromString(id))
 	}
 
+	fun create(variation: V): Item<ItemType<V>, V> {
+		return Item(this, variation)
+	}
+
 	companion object {
 
 		val defaultProperties: Property.Set get() {
@@ -33,3 +37,5 @@ interface ItemType<V: ItemVariation>: Type<V> {
 
 	}
 }
+
+//fun ItemType<NoItemVariation>.create() = Item(this)

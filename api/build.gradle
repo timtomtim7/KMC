@@ -11,17 +11,22 @@ repositories {
 	mavenLocal()
 	maven { url 'http://dl.bintray.com/kotlin/kotlin-eap' }
 	maven { url 'http://sparse.blue/maven'}
+	jcenter()
 }
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     compile "org.jetbrains.kotlin:kotlin-reflect"
-    compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.25.3-eap13"
+	compile "org.jetbrains.kotlin:kotlin-compiler-embeddable"
+	compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.25.3-eap13"
 	compile "blue.sparse:sparse-math:+"
 }
 
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions {
+        freeCompilerArgs = ["-XXLanguage:+InlineClasses"]
+    }
 }
 
 compileTestKotlin {

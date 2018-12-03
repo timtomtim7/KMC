@@ -5,12 +5,16 @@ import blue.sparse.kmc.api.type.block.Block
 import blue.sparse.kmc.api.type.block.BlockType
 import blue.sparse.kmc.api.type.variations.*
 
-class Item<T : ItemType<V>, V : ItemVariation>(var type: T, var variation: V) {
+data class Item<T : ItemType<V>, V : ItemVariation>(var type: T, var variation: V) {
 
 	val properties = Property.Map(type.properties)
 
 	val display: ItemDisplay
 		inline get() = ItemDisplay(this)
+
+	fun stack(amount: Int = 1): ItemStack {
+		return ItemStack(this, amount)
+	}
 
 	override fun equals(other: Any?): Boolean {
 		if (this === other) return true

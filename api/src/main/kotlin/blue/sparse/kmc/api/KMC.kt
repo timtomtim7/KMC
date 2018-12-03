@@ -2,8 +2,8 @@ package blue.sparse.kmc.api
 
 import blue.sparse.kmc.api.event.EventManager
 import blue.sparse.kmc.api.plugin.PluginLoader
-import blue.sparse.kmc.api.scheduler.SchedulerImpl
-import kotlinx.coroutines.launch
+import blue.sparse.kmc.api.scheduler.SchedulerAPI
+import blue.sparse.kmc.api.world.access.WorldAccess
 import java.io.File
 import java.util.logging.Logger
 
@@ -26,21 +26,37 @@ object KMC {
 	 */
 	val events = EventManager()
 
-	internal lateinit var scheduler: SchedulerImpl
+	internal lateinit var scheduler: SchedulerAPI
+
+	lateinit var worlds: WorldAccess
+		private set
+
+	// players
+	// worlds
+	//
 
 	/**
 	 * Initialize KMC
 	 *
 	 * **Can only be called once**
 	 */
-	fun initialize(pluginsFolder: File, scheduler: SchedulerImpl) {
+	fun initialize(
+			pluginsFolder: File,
+			scheduler: SchedulerAPI,
+			worlds: WorldAccess
+	) {
 		if (this::pluginsFolder.isInitialized)
 			throw IllegalStateException("Already initialized KMC.")
 
 		this.scheduler = scheduler
 		this.pluginsFolder = pluginsFolder
+		this.worlds = worlds
 		logger.info("KMC initialized!")
 		PluginLoader.loadPlugins()
 	}
 
+	fun shutdown() {
+		logger.info("KMC shutting down...")
+		PluginLoader.disablePlugins()
+	}
 }

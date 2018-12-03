@@ -1,6 +1,5 @@
 package blue.sparse.kmc.api.util
 
-@Suppress("EXPERIMENTAL_FEATURE_WARNING")
 inline class BlockPosition(private val positionID: Long) {
 
 	val x: Int

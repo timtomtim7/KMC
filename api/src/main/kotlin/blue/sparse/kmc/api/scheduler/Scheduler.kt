@@ -3,12 +3,12 @@ package blue.sparse.kmc.api.scheduler
 import blue.sparse.kmc.api.KMC
 import blue.sparse.kmc.api.util.Time
 
-object Scheduler : SchedulerImpl by KMC.scheduler
+object Scheduler : SchedulerAPI by KMC.scheduler
 
 typealias Task = () -> Unit
 
 @Suppress("unused")
-interface SchedulerImpl {
+interface SchedulerAPI {
 	val expectedTickRate: Double
 	val currentTickRate: Double
 

@@ -1,6 +1,15 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.3-M2'
+    id 'org.jetbrains.kotlin.jvm' version '1.3.10'
 }
 
 group 'blue.sparse.minecraft'
 version '1.0-SNAPSHOT'
+
+//allprojects {
+//    repositories {
+//        mavenCentral()
+//        mavenLocal()
+//        maven { url 'http://sparse.blue/maven' }
+//        maven { url 'http://dl.bintray.com/kotlin/kotlin-eap' }
+//    }
+//}

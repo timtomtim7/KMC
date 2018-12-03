@@ -1,6 +1,7 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm'
+	id 'org.jetbrains.kotlin.jvm'
 }
+
 
 group 'blue.sparse.minecraft'
 version '1.0-SNAPSHOT'
@@ -10,15 +11,16 @@ repositories {
 	mavenLocal()
 	maven { url 'http://sparse.blue/maven' }
 	maven { url 'http://dl.bintray.com/kotlin/kotlin-eap' }
-	flatDir { dirs "F:/Spigot/" }
+	flatDir { dirs "spigot" }
 }
 
 dependencies {
-    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-//	compileOnly name: "aspigot-1.13.1"
-	["1.7.10", "1.8.3", "1.8.8", "1.8", "1.9.2", "1.9.4", "1.10.2", "1.11.2", "1.11", "1.12.1", "1.12.2", "1.12", "1.13", "1.13.1"].each {
-		compileOnly name: "spigot-$it"
-	}
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+	compileOnly 'org.spigotmc:spigot-api:1.8-R0.1-SNAPSHOT'
+	compileOnly name: "spigot-1.13.2"
+//	["1.7.10", "1.8.3", "1.8.8", "1.8", "1.9.2", "1.9.4", "1.10.2", "1.11.2", "1.11", "1.12.1", "1.12.2", "1.12", "1.13", "1.13.1"].each {
+//		compileOnly name: "spigot-$it"
+//	}
 
 	compile project(":api")
 }
@@ -35,5 +37,34 @@ jar {
 	archivesBaseName = "KMC-Bukkit"
 //	archiveName = "${archivesBaseName}.jar"
 //	from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-	from project(":api").sourceSets.main.output
+	def api = project(":api")
+	from api.sourceSets.main.output
+	from api.configurations.compile
+			.collect { it.isDirectory() ? it : zipTree(it) }
+
+//	def ver = project(":bukkit/v1_13_R2")
+//	from ver.sourceSets.main.output
+//	from ver.configurations.compile
+//			.collect { it.isDirectory() ? it : zipTree(it) }
+
+//	println(parent.subprojects)
+//
+//	from parent.subprojects.findAll {it.name.startsWith(":bukkit/")}.collect {
+//		it.sourceSets.main.output// + it.configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+//	}
 }
+
+//task versionJar(type: Jar) {
+//	baseName = "KMC-Bukkit-all"
+//
+//	def api = project(":api")
+//
+//	from api.sourceSets.main.output
+//	from sourceSets.main.output
+//
+//	from api.configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+//	from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+//
+//
+//	from project(":bukkit/v1_13_R2").sourceSets.main.output
+//}
